@@ -35,26 +35,6 @@
                   </a>
               </li>
             </tal:tabs>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.facebook.com/rkarecords/">
-                <i class="ion ion-logo-facebook" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://twitter.com/rkarecords">
-                <i class="ion ion-logo-twitter"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://soundcloud.com/rka-records">
-                <i class="ion ion-md-cloud"></i>
-              </a>
-            </li>
-            <li class="app-navitem">
-              <a class="app-navitem-tab" href="https://www.instagram.com/rkarecords/">
-                <i class="ion ion-logo-instagram"></i>
-              </a>
-            </li>
         </ul>
       </div>
     </div>
