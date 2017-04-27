@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<layers>
+  <layer
+    name="rka.sitecontent"
+    interface="rka.sitecontent.interfaces.IRkaSitecontentLayer"
+  />
+</layers>

@@ -18,14 +18,14 @@ long_description = \
 setup(
     name='rka.sitetheme',
     version='1.0.0',
-    description="Anwaltskanzlei Ahlt Website",
+    description="rka Website",
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
     ],
-    keywords='Plone Kreativkombinat',
+    keywords='plone rka',
     author='Serge Davidov',
     author_email='sd@ade25.de',
     url='http://pypi.python.org/pypi/rka.buildout',

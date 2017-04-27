@@ -15,7 +15,7 @@ from plone.testing import z2
 import unittest2 as unittest
 
 
-class RkaSiteThemeLayer(PloneSandboxLayer):
+class rkaSiteThemeLayer(PloneSandboxLayer):
 
     defaultBases = (PLONE_FIXTURE,)
 
@@ -46,11 +46,11 @@ class RkaSiteThemeLayer(PloneSandboxLayer):
         z2.uninstallProduct(app, 'rka.sitetheme')
 
 
-FIXTURE = RkaBuildoutLayer()
+FIXTURE = rkaBuildoutLayer()
 INTEGRATION_TESTING = IntegrationTesting(
-    bases=(FIXTURE,), name="RkaBuildoutLayer:Integration")
+    bases=(FIXTURE,), name="rkaBuildoutLayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(FIXTURE,), name="RkaBuildoutLayer:Functional")
+    bases=(FIXTURE,), name="rkaBuildoutLayer:Functional")
 
 
 class IntegrationTestCase(unittest.TestCase):
