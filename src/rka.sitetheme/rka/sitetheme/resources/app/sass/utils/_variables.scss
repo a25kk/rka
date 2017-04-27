@@ -6,7 +6,7 @@
 //== Colors
 //
 //## Brand colors used across the project
-$color-Gray60:               	rgba(153,153,153,1) !default; // #999999
+$color-redberry:               	rgba(153,0,0,1) !default; // #990000
 
 $color-Black:               	rgba(0,0,0,1) !default; // #000000
 
@@ -22,7 +22,7 @@ $app-red:                       rgba(204, 0, 0, 1);
 //## Used in mixin and modifier classes
 
 //** Primary brand color
-$app-primary-base:              $color-Gray60 !default;
+$app-primary-base:              $color-redberry !default;
 $app-primary-darker:            darken($app-primary-base, 15%)  !default;
 $app-primary-dark:              darken($app-primary-base, 7.5%) !default;
 $app-primary:                   $app-primary-base               !default; // #999999
