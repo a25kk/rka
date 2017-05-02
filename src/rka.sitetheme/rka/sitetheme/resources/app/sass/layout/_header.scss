@@ -23,6 +23,8 @@
     }
     @include make-row();
     flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 //** Base card styles

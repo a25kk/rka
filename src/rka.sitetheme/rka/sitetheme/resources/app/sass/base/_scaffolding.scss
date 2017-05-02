@@ -7,6 +7,8 @@
 body {
     @include when-inside('.app-fonts-loaded') {
         font-weight: 300;
+        background: url(../assets/img/bg.jpg) no-repeat center center;
+        background-size: cover;
     }
 }
 

@@ -6603,7 +6603,6 @@ pre code
 .container,
 .app-footer-cards,
 .app-copyright,
-.app-pathbar,
 .app-content
 {
     position: relative;
@@ -6618,7 +6617,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         padding-right: 15px;
@@ -6630,7 +6628,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         padding-right: 15px;
@@ -6642,7 +6639,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         padding-right: 15px;
@@ -6654,7 +6650,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         padding-right: 15px;
@@ -6666,7 +6661,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         width: 540px;
@@ -6678,7 +6672,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         width: 720px;
@@ -6690,7 +6683,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         width: 960px;
@@ -6702,7 +6694,6 @@ pre code
     .container,
     .app-footer-cards,
     .app-copyright,
-    .app-pathbar,
     .app-content
     {
         width: 1140px;
@@ -11104,7 +11095,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable > .container,
     .navbar-toggleable > .app-footer-cards,
     .navbar-toggleable > .app-copyright,
-    .navbar-toggleable > .app-pathbar,
     .navbar-toggleable > .app-content
     {
         padding-right: 0;
@@ -11138,7 +11128,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable > .container,
     .navbar-toggleable > .app-footer-cards,
     .navbar-toggleable > .app-copyright,
-    .navbar-toggleable > .app-pathbar,
     .navbar-toggleable > .app-content
     {
         display: -ms-flexbox;
@@ -11173,7 +11162,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-sm > .container,
     .navbar-toggleable-sm > .app-footer-cards,
     .navbar-toggleable-sm > .app-copyright,
-    .navbar-toggleable-sm > .app-pathbar,
     .navbar-toggleable-sm > .app-content
     {
         padding-right: 0;
@@ -11207,7 +11195,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-sm > .container,
     .navbar-toggleable-sm > .app-footer-cards,
     .navbar-toggleable-sm > .app-copyright,
-    .navbar-toggleable-sm > .app-pathbar,
     .navbar-toggleable-sm > .app-content
     {
         display: -ms-flexbox;
@@ -11242,7 +11229,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-md > .container,
     .navbar-toggleable-md > .app-footer-cards,
     .navbar-toggleable-md > .app-copyright,
-    .navbar-toggleable-md > .app-pathbar,
     .navbar-toggleable-md > .app-content
     {
         padding-right: 0;
@@ -11276,7 +11262,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-md > .container,
     .navbar-toggleable-md > .app-footer-cards,
     .navbar-toggleable-md > .app-copyright,
-    .navbar-toggleable-md > .app-pathbar,
     .navbar-toggleable-md > .app-content
     {
         display: -ms-flexbox;
@@ -11311,7 +11296,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-lg > .container,
     .navbar-toggleable-lg > .app-footer-cards,
     .navbar-toggleable-lg > .app-copyright,
-    .navbar-toggleable-lg > .app-pathbar,
     .navbar-toggleable-lg > .app-content
     {
         padding-right: 0;
@@ -11345,7 +11329,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
     .navbar-toggleable-lg > .container,
     .navbar-toggleable-lg > .app-footer-cards,
     .navbar-toggleable-lg > .app-copyright,
-    .navbar-toggleable-lg > .app-pathbar,
     .navbar-toggleable-lg > .app-content
     {
         display: -ms-flexbox;
@@ -11388,7 +11371,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
 .navbar-toggleable-xl > .container,
 .navbar-toggleable-xl > .app-footer-cards,
 .navbar-toggleable-xl > .app-copyright,
-.navbar-toggleable-xl > .app-pathbar,
 .navbar-toggleable-xl > .app-content
 {
     padding-right: 0;
@@ -11408,7 +11390,6 @@ input[type='color'] + .input-group-addon:not(:first-child),
 .navbar-toggleable-xl > .container,
 .navbar-toggleable-xl > .app-footer-cards,
 .navbar-toggleable-xl > .app-copyright,
-.navbar-toggleable-xl > .app-pathbar,
 .navbar-toggleable-xl > .app-content
 {
     display: -ms-flexbox;
@@ -16306,6 +16287,9 @@ http://flickity.metafizzy.co
 .app-fonts-loaded body
 {
     font-weight: 300;
+
+    background: url(../assets/img/bg.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 b,
@@ -16448,6 +16432,8 @@ a:hover
 
     margin-right: -15px;
     margin-left: -15px;
+    padding-right: 1rem; 
+    padding-left: 1rem;
 
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -17623,8 +17609,13 @@ img[data-sizes='auto']
 {
     font-size: .875rem;
 
+    position: relative;
+
     margin-top: 0;
-    padding-left: 0; 
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 
     border-radius: 0;
     background-color: transparent;
@@ -17632,6 +17623,70 @@ img[data-sizes='auto']
 .template-search .app-pathbar
 {
     display: none;
+}
+@media (min-width: 576px)
+{
+    .app-pathbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-pathbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-pathbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-pathbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-pathbar
+    {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-pathbar
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-pathbar
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-pathbar
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
 }
 .app-pathbar .breadcrumb
 {
@@ -17920,7 +17975,78 @@ body.template-frontpage-view .app-pathbar
 
 .app-bannerbar
 {
+    position: relative;
+
+    margin-right: auto;
+    margin-bottom: 2rem; 
+    margin-left: auto;
     padding-top: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 576px)
+{
+    .app-bannerbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-bannerbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-bannerbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-bannerbar
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-bannerbar
+    {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-bannerbar
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-bannerbar
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-bannerbar
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
 }
 
 .app-banner
@@ -17933,11 +18059,11 @@ body.template-frontpage-view .app-pathbar
     margin-right: auto;
     margin-bottom: 2rem;
     margin-left: auto;
-    padding: 1rem;
+    padding: 0; 
     padding-right: 15px;
-    padding-left: 15px; 
+    padding-left: 15px;
 
-    background: #fff;
+    background: transparent;
 }
 @media (min-width: 576px)
 {
@@ -19136,7 +19262,7 @@ body.template-frontpage-view .app-pathbar
 .app-page-headline,
 .app-page-title
 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 300;
 
     margin-top: 1rem;
@@ -19165,7 +19291,7 @@ body.template-frontpage-view .app-pathbar
     .template-frontpage-view
     .app-page-title
     {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -19668,6 +19794,98 @@ body.template-frontpage-view .app-pathbar
     text-transform: uppercase; 
 
     color: #fff;
+}
+
+.app-wrapper
+{
+    position: relative;
+
+    margin-top: 1rem;
+    margin-right: auto;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-left: 1rem;
+    padding: 0; 
+    padding-right: 15px;
+    padding-left: 15px;
+
+    border-radius: .3rem;
+    background: #f7f5ec;
+}
+@media (min-width: 576px)
+{
+    .app-wrapper
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-wrapper
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-wrapper
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-wrapper
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-wrapper
+    {
+        width: 540px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-wrapper
+    {
+        width: 720px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 992px)
+{
+    .app-wrapper
+    {
+        width: 960px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-wrapper
+    {
+        width: 1140px;
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px)
+{
+    .app-wrapper
+    {
+        margin-right: auto; 
+        margin-left: auto;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 .app-main

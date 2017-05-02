@@ -4,22 +4,20 @@
 
 //** Fullscreen container bar
 .app-bannerbar {
-  //background: #fff;
+  @include make-container();
+  @include make-container-max-widths();
   padding-top: 0px;
-  //border-radius: $border-radius;
-  //@include media-breakpoint-up(sm) {
-  //  padding-top: 15px;
-  //}
+  margin-bottom: 2rem;
 }
 
 .app-banner {
+    @include make-container();
+    @include make-container-max-widths();
     height: 210px;
     overflow: hidden;
     margin-bottom: 2rem;
-    background: #fff;
-    padding: 1rem;
-    @include make-container();
-    @include make-container-max-widths();
+    background: transparent;
+    padding: 0;
     @include media-breakpoint-up(md) {
     margin-left: auto;
     margin-left: auto;
