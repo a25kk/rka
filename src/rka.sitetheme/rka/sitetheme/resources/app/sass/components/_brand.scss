@@ -25,6 +25,10 @@
     font-weight: 700;
     font-size: 2rem;
     @include media-breakpoint-up(sm) {
+        margin: 1rem 2rem 0 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
         margin: 2rem 2rem 0 1rem;
     }
 }

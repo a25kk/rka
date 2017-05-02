@@ -13,7 +13,7 @@
 .app-banner {
     @include make-container();
     @include make-container-max-widths();
-    height: 210px;
+    height: 300px;
     overflow: hidden;
     margin-bottom: 2rem;
     background: transparent;
@@ -36,8 +36,8 @@
 //## content and a lazyloaded background image
 .app-banner-item {
     position: relative;
-    height: 166px;
-    min-height: 166px;
+    height: 300px;
+    min-height: 300px;
     width: 100%;
     background-size: cover !important;
     background-position: top center;

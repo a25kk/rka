@@ -3,49 +3,74 @@
 // -----------------------------------------
 
 .app-navbar {
-    @include make-container();
-    @include make-container-max-widths();
     @extend .navbar;
     line-height: ($spacer / 2);
-    padding-left: 0;
-    padding-right: 0;
-    margin: 1rem 1rem 0 1rem;
-    @include media-breakpoint-up(sm) {
-        margin-top: 2rem;
-    }
+    @include media-breakpoint-up(md) {
+        position: relative;
+        background: transparent;
+        padding-top: 5rem;
+        padding-right: .5rem;
+        }
     @include media-breakpoint-up(xl) {
-        margin-top: 6rem;
+        padding-top: 6rem;
     }
 }
-
-.app-navbar-brand {
-    padding-left: 1rem;
-}
-
 //== Navbar header
 //
 //## Default display of global site navigation
 //## Hidden on larger displays
 .app-navbar-header {
     @include clearfix;
-    display: flex;
-    align-items: center;
+    //display: flex;
+    //align-items: center;
     padding: 0;
     background: transparent;
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
         display: none;
     }
 }
 
+//** Navbar toggle text
 .app-navbar-header-title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-    width: 100%;
-    text-transform: uppercase;
+  flex: 0 0 75%;
+  padding-top: .75rem;
+  padding-left: 1rem;
+  height: 50px;
+  line-height: 1.5rem;
+  display: none;
 }
 
+//** Icon bar navigation toggle
 .app-navbar-header-toggle {
-    float: right;
+  //flex: 0 0 25%;
+  text-align: center;
+  width: 100%;
+}
+
+// Navbar toggle button visible on small displays
+.app-navbar-toggle {
+  width: 100%;
+  border-color: transparent;
+  background: transparent;
+  text-align: right;
+  &:hover,
+  &:focus {
+    background: transparent;
+    border-color: transparent;
+  }
+  .icon-bar {
+    background-color: $gray-lighter;
+  }
+  // Bars
+  .icon-bar {
+    display: block;
+    width: 44px;
+    height: 2px;
+    border-radius: 1px;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 12px;
+  }
 }
 
 // Navbar toggle button visible on small displays
@@ -78,7 +103,6 @@
     font-size: $font-size-lg;
     line-height: 1;
     background: none;
-    color: $app-secondary;
     border: $border-width solid transparent;
     @include border-radius($btn-border-radius);
 
@@ -89,27 +113,30 @@
 
 
 .app-navbar-collapse {
-    //margin-left: -30px !important;
-    //margin-right: -30px !important;
+    background-color: #ccc;
+    @include media-breakpoint-up(md) {
+        background: transparent;
+
+    }
 }
 
 // Unordered list main navigation
 .app-navbar-nav {
     @extend .nav;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-bottom: 0;
-    padding: 1rem;
-    list-style: none;
-    @include media-breakpoint-up(sm) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: right;
+  // justify-content: center;
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  @include clearfix();
+    @include media-breakpoint-up(lg) {
         padding: 0;
         flex-wrap: nowrap;
-    }
-    @extend .clearfix;
-    @include media-breakpoint-up(md) {
-        justify-content: space-between;
+        justify-content: flex-end;
+        background: transparent;
     }
 }
 
@@ -118,52 +145,41 @@
 //## Color coded based on addon classes
 .app-navitem {
     width: 100%;
+    padding-left: 1rem;
+    margin-left: 0;
+    text-transform: uppercase;
     @include media-breakpoint-up(md) {
-        //width: 16.66666667%;
         width: auto;
-        @include media-breakpoint-up(lg) {
-            background: transparent;
-            padding-left: .8rem;
-            padding-right: .8rem;
-        }
-        &:first-child {
-            padding-left: 0;
-        }
-        &:last-child {
-            padding-right: 0;
-        }
+        border-top: none;
+        flex: 0 1 auto;
+    }
+    @include media-breakpoint-up(lg) {
+        padding-left: .25rem;
+        padding-right: .25rem;
     }
 }
 
-
 .app-navitem-tab {
-    padding-right: 0.25rem;
-    padding-left: 0.25rem;
-    padding-bottom: 0.7rem;
-    color: $app-gray;
-    text-transform: uppercase;
+    padding: .25rem;
+    color: $app-secondary;
     font-weight: 300;
     line-height: 1;
     transition: background-color 0.5s ease;
-    font-size: 1rem;
-     @include media-breakpoint-up(lg) {
-        font-size: 1.1rem;
-     }
     &:hover {
-        color: $app-primary-dark;
-        background-color: transparent;
-        text-decoration: none;
+      color: #000;
+      text-decoration: none;
     }
     > span {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
+      display: block;
+      margin: 0 auto;
     }
     @include media-breakpoint-up(md) {
         display: flex;
+        align-items: center;
+        text-align: center;
     }
     @include when-inside('.active') {
-        color: $app-primary-dark;
+        color: $app-primary;
         background-color: transparent;
         text-decoration: none;
     }

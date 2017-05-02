@@ -12044,8 +12044,7 @@ a.bg-inverse:hover
     border-radius: 0;
 }
 
-.clearfix::after,
-.app-navbar-nav::after
+.clearfix::after
 {
     display: block;
     clear: both; 
@@ -16351,6 +16350,15 @@ a:hover
     }
 }
 
+.app-divider
+{
+    min-height: 1.5rem;
+    margin-right: 1.8rem; 
+    margin-left: 1.8rem;
+
+    background: url(../assets/img/pattern.gif) repeat-x top right;
+}
+
 .app-header-content
 {
     position: relative;
@@ -16489,7 +16497,7 @@ a:hover
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
 }
-@media (min-width: 576px)
+@media (min-width: 768px)
 {
     .app-header-panels .app-header-panel
     {
@@ -16514,7 +16522,7 @@ a:hover
 {
     min-height: 50px;
 }
-@media (min-width: 576px)
+@media (min-width: 768px)
 {
     .app-header-panel.app-header-brandbar
     {
@@ -16525,7 +16533,7 @@ a:hover
     }
 }
 
-@media (min-width: 576px)
+@media (min-width: 768px)
 {
     .app-header-panel.app-header-navbar
     {
@@ -16539,112 +16547,32 @@ a:hover
 .app-navbar
 {
     line-height: .5rem;
-
-    position: relative;
-
-    margin: 1rem 1rem 0 1rem; 
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-right: 0;
-    padding-left: 15px;
-    padding-left: 0;
-}
-@media (min-width: 576px)
-{
-    .app-navbar
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
 }
 @media (min-width: 768px)
 {
     .app-navbar
     {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-navbar
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-navbar
-    {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-}
-@media (min-width: 576px)
-{
-    .app-navbar
-    {
-        width: 540px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-navbar
-    {
-        width: 720px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 992px)
-{
-    .app-navbar
-    {
-        width: 960px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-navbar
-    {
-        width: 1140px;
-        max-width: 100%;
-    }
-}
-@media (min-width: 576px)
-{
-    .app-navbar
-    {
-        margin-top: 2rem;
-    }
-}
-@media (min-width: 1200px)
-{
-    .app-navbar
-    {
-        margin-top: 6rem;
-    }
-}
+        position: relative;
 
-.app-navbar-brand
+        padding-top: 5rem;
+        padding-right: .5rem; 
+
+        background: transparent;
+    }
+}
+@media (min-width: 1200px)
 {
-    padding-left: 1rem;
+    .app-navbar
+    {
+        padding-top: 6rem;
+    }
 }
 
 .app-navbar-header
 {
-    display: -ms-flexbox;
-    display: flex;
-
     padding: 0;
 
-    background: transparent; 
-
-    -ms-flex-align: center;
-    align-items: center;
+    background: transparent;
 }
 .app-navbar-header::after
 {
@@ -16653,7 +16581,7 @@ a:hover
 
     content: '';
 }
-@media (min-width: 576px)
+@media (min-width: 768px)
 {
     .app-navbar-header
     {
@@ -16663,17 +16591,56 @@ a:hover
 
 .app-navbar-header-title
 {
-    font-size: 1.5rem;
     line-height: 1.5rem;
 
-    width: 100%;
+    display: none; 
 
-    text-transform: uppercase;
+    height: 50px;
+    padding-top: .75rem;
+    padding-left: 1rem;
+
+    -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
 }
 
 .app-navbar-header-toggle
 {
-    float: right;
+    width: 100%; 
+
+    text-align: center;
+}
+
+.app-navbar-toggle
+{
+    width: 100%;
+
+    text-align: right; 
+
+    border-color: transparent;
+    background: transparent;
+}
+.app-navbar-toggle:hover,
+.app-navbar-toggle:focus
+{
+    border-color: transparent; 
+    background: transparent;
+}
+.app-navbar-toggle .icon-bar
+{
+    background-color: #eceeef;
+}
+.app-navbar-toggle .icon-bar
+{
+    display: block;
+
+    width: 44px;
+    height: 2px;
+
+    border-radius: 1px;
+}
+.app-navbar-toggle .icon-bar + .icon-bar
+{
+    margin-top: 12px;
 }
 
 @media (min-width: 576px)
@@ -16707,7 +16674,6 @@ a:hover
 
     padding: .5rem .75rem;
 
-    color: black;
     border: 1px solid transparent; 
     background: none;
 }
@@ -16717,6 +16683,18 @@ a:hover
     text-decoration: none;
 }
 
+.app-navbar-collapse
+{
+    background-color: #ccc;
+}
+@media (min-width: 768px)
+{
+    .app-navbar-collapse
+    {
+        background: transparent;
+    }
+}
+
 .app-navbar-nav
 {
     display: -ms-flexbox;
@@ -16724,103 +16702,89 @@ a:hover
         flex-direction: row;
 
     margin-bottom: 0;
-    padding: 1rem;
+    padding-left: 0;
 
     list-style: none; 
 
     -ms-flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
+    -ms-flex-align: right;
+    align-items: right;
 }
-@media (min-width: 576px)
+.app-navbar-nav::after
+{
+    display: block;
+    clear: both; 
+
+    content: '';
+}
+@media (min-width: 992px)
 {
     .app-navbar-nav
     {
         padding: 0;
 
+        background: transparent; 
+
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-navbar-nav
-    {
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
     }
 }
 
 .app-navitem
 {
     width: 100%;
+    margin-left: 0;
+    padding-left: 1rem;
+
+    text-transform: uppercase;
 }
 @media (min-width: 768px)
 {
     .app-navitem
     {
         width: auto;
+
+        border-top: none;
+
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
     }
 }
-@media (min-width: 768px) and (min-width: 992px)
+@media (min-width: 992px)
 {
     .app-navitem
     {
-        padding-right: .8rem; 
-        padding-left: .8rem;
-
-        background: transparent;
-    }
-}
-@media (min-width: 768px)
-{
-    .app-navitem:first-child
-    {
-        padding-left: 0;
-    }
-    .app-navitem:last-child
-    {
-        padding-right: 0;
+        padding-right: .25rem; 
+        padding-left: .25rem;
     }
 }
 
 .app-navitem-tab
 {
-    font-size: 1rem; 
     font-weight: 300;
     line-height: 1;
 
-    padding-right: .25rem;
-    padding-bottom: .7rem;
-    padding-left: .25rem;
+    padding: .25rem;
 
-    transition: background-color .5s ease;
-    text-transform: uppercase;
+    transition: background-color .5s ease; 
 
-    color: #666;
-}
-@media (min-width: 992px)
-{
-    .app-navitem-tab
-    {
-        font-size: 1.1rem;
-    }
+    color: black;
 }
 .app-navitem-tab:hover
 {
     text-decoration: none; 
 
-    color: #730000;
-    background-color: transparent;
+    color: #000;
 }
 .app-navitem-tab > span
 {
     display: block;
 
     margin: 0 auto;
-    padding: 0;
 }
 @media (min-width: 768px)
 {
@@ -16828,13 +16792,18 @@ a:hover
     {
         display: -ms-flexbox;
         display: flex;
+
+        text-align: center; 
+
+        -ms-flex-align: center;
+        align-items: center;
     }
 }
 .active .app-navitem-tab
 {
     text-decoration: none; 
 
-    color: #730000;
+    color: #900;
     background-color: transparent;
 }
 
@@ -16904,7 +16873,7 @@ a:hover
     font-size: 1rem; 
     font-weight: 300;
 
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
 
     text-transform: uppercase;
 }
@@ -16912,6 +16881,8 @@ a:hover
 {
     .app-copyright
     {
+        padding: 0 2rem 2rem 2rem; 
+
         text-align: left;
     }
 }
@@ -17782,6 +17753,13 @@ body.template-frontpage-view .app-pathbar
 {
     .app-brandname-logo
     {
+        margin: 1rem 2rem 0 1rem;
+    }
+}
+@media (min-width: 768px)
+{
+    .app-brandname-logo
+    {
         margin: 2rem 2rem 0 1rem;
     }
 }
@@ -18055,7 +18033,7 @@ body.template-frontpage-view .app-pathbar
 
     overflow: hidden;
 
-    height: 210px;
+    height: 300px;
     margin-right: auto;
     margin-bottom: 2rem;
     margin-left: auto;
@@ -18146,8 +18124,8 @@ body.template-frontpage-view .app-pathbar
     position: relative;
 
     width: 100%;
-    height: 166px;
-    min-height: 166px;
+    height: 300px;
+    min-height: 300px;
 
     background-position: top center; 
     background-size: cover !important;
@@ -19755,12 +19733,12 @@ body.template-frontpage-view .app-pathbar
 {
     .app-summary-wrapper .app-summary-left
     {
-        max-width: 50%;
+        max-width: 33.3333333333%;
         margin-bottom: 0;
         padding: 0 1rem 0 0; 
 
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 33.3333333333%;
+            flex: 0 0 33.3333333333%;
     }
 }
 .app-summary-wrapper .app-summary-right
@@ -19777,10 +19755,10 @@ body.template-frontpage-view .app-pathbar
 {
     .app-summary-wrapper .app-summary-right
     {
-        max-width: 50%; 
+        max-width: 66.6666666667%; 
 
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
+        -ms-flex: 0 0 66.6666666667%;
+            flex: 0 0 66.6666666667%;
     }
 }
 

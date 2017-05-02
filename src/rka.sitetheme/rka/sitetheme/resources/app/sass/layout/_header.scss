@@ -9,6 +9,13 @@
     }
 }
 
+.app-divider {
+    background: url(../assets/img/pattern.gif) repeat-x top right;
+    min-height: 1.5rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+}
+
 .app-header-content {
     @include make-container();
     @include make-container-max-widths();
@@ -34,7 +41,7 @@
     }
     @include when-inside('.app-header-panels') {
         @include make-col(12);
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             @include make-col(6);
         }
         @include media-breakpoint-up(md) {
@@ -42,14 +49,14 @@
         }
     }
     &.app-header-brandbar {
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             @include make-col(4);
         }
         min-height: 50px;
     }
 
     &.app-header-navbar {
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             @include make-col(8);
         }
     }
