@@ -8,7 +8,7 @@
   }
   .app-card-main {
     padding: 0;
-    border: 0px solid $gray-lighter;
+    border: 0px solid $gray-600;
   }
 }
 
@@ -34,7 +34,7 @@
   width: 100% !important;
   color: $app-secondary !important;
   padding: .5rem 1rem;
-  background: $gray-lighter;
+  background: $gray-600;
   &:hover {
     color: #fff !important;
     text-decoration: none;

@@ -39,22 +39,7 @@
     @include when-inside('.app-cards') {
         @include make-col(12);
         @include media-breakpoint-up(sm) {
-            @include make-col(6);
-        }
-        @include media-breakpoint-up(lg) {
             @include make-col(3);
-            // flex-shrink: 1;
-        }
-    }
-
-    @include when-inside('.section-releases') {
-        @include make-col(12);
-        @include media-breakpoint-up(sm) {
-            @include make-col(6);
-        }
-        @include media-breakpoint-up(lg) {
-            @include make-col(4);
-            // flex-shrink: 1;
         }
     }
 
@@ -68,6 +53,13 @@
 //== Card layout
 //
 //## Reflow card contents based on viewport size
+.app-card__header {
+    margin-bottom: 1rem;
+    &--hidden {
+        @include sr-only();
+    }
+}
+// DEPRECATED
 .app-card-header {
     @include when-inside('.app-cards-front-page') {
         height: 10rem;
@@ -80,12 +72,42 @@
 //== Card title
 //
 //## Title is used inside the card header
-.app-card-title {
+.app-card-title,
+.app-card__title {
     font-size: 1rem;
     text-transform: uppercase;
     line-height: 1.2rem;
     @include media-breakpoint-up(sm) {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+    a {
+        color: $app-primary;
+        font-weight: 400;
+    }
+}
+
+.app-card__abstract {
+    color: $black;
+}
+
+.app-card__footer {
+    a {
+        color: $app-primary;
+        font-weight: 400;
+    }
+}
+
+.app-card__link {
+    color: $app-gray;
+    line-height: 1.5rem;
+    &:hover {
+        text-decoration: none;
+        color: darken($app-gray, 15%);
+        .app-page__figure {
+           transition: all 0.5s ease;
+        -webkit-filter: blur(5px); /* Safari */
+        filter: blur(5px); 
+        }
     }
 }
 
@@ -142,7 +164,7 @@ $card-title-spacers: (
     color: #fff;
     &-plain {
         padding-top: .5rem;
-        background: $gray-light;
+        background: $gray-400;
     }
 }
 
@@ -297,8 +319,8 @@ $card-title-spacers: (
     @include size(4rem);
     padding-top: 0.5rem;
     border-radius: 50%;
-    border: 1px solid $gray-lighter;
-    color: $gray-lighter;
+    border: 1px solid $gray-300;
+    color: $gray-300;
     font-size: 2rem;
 }
 
