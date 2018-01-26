@@ -15655,7 +15655,7 @@ a:hover
     display: flex;
         flex-direction: row;
 
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     padding-left: 0;
 
     list-style: none; 
@@ -15677,9 +15677,10 @@ a:hover
 {
     .app-navbar-nav
     {
+        margin-bottom: 0; 
         padding: 0;
 
-        background: transparent; 
+        background: transparent;
 
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
@@ -15719,6 +15720,7 @@ a:hover
 
 .app-navitem-tab
 {
+    font-size: .7rem;
     font-weight: 300;
     line-height: 1;
 
@@ -15751,6 +15753,13 @@ a:hover
 
         -ms-flex-align: center;
         align-items: center;
+    }
+}
+@media (min-width: 1200px)
+{
+    .app-navitem-tab
+    {
+        font-size: .9rem;
     }
 }
 .active .app-navitem-tab
@@ -18395,17 +18404,16 @@ body.template-frontpage-view .app-pathbar
 .app-wrapper
 {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 0;
     margin-right: auto;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
+    margin-right: auto;
+    margin-bottom: 0;
     margin-left: auto;
-    margin-left: 1rem;
+    margin-left: auto;
     padding: 0; 
     padding-right: 15px;
     padding-left: 15px;
 
-    border-radius: .3rem;
     background: #f7f5ec;
 }
 @media (min-width: 576px)
@@ -18440,10 +18448,14 @@ body.template-frontpage-view .app-pathbar
 {
     .app-wrapper
     {
-        margin-right: auto; 
+        margin-top: 1rem;
+        margin-right: auto;
+        margin-bottom: 1rem; 
         margin-left: auto;
         padding-right: 1rem;
         padding-left: 1rem;
+
+        border-radius: .3rem;
     }
 }
 
